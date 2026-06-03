@@ -34,7 +34,7 @@ const featureSections = [
     title: "See sales, costs and profit in one daily view.",
     copy: "The dashboard makes revenue, profit, margin, ROAS, refunds and goal progress visible without rebuilding reports every week.",
     image: screens.dashboard,
-    stats: ["€1,350 revenue", "€334.90 profit", "26.6% margin"]
+    stats: ["$1,350 revenue", "$334.90 profit", "26.6% margin"]
   },
   {
     label: "Config",
@@ -109,7 +109,7 @@ const trustBullets = [
   ["Understand real margins", "Compare products by margin instead of revenue alone."],
   ["Track ads against profit", "Review ad spend beside net revenue and profit."],
   ["Inventory cash tracking", "Spot products and stock decisions that affect cash flow."],
-  ["One-time payment", "Buy the bundle once and use it inside Google Sheets."],
+  ["One-time payment", "Buy the toolkit once and use it inside Google Sheets."],
   ["No monthly SaaS subscription", "Useful for stores that do not need another platform bill."],
   ["Built in Google Sheets", "Easy to duplicate, share and update manually."],
   ["Setup in under 30 minutes", "Most stores can enter the first inputs quickly."]
@@ -117,7 +117,7 @@ const trustBullets = [
 
 const faqs = [
   ["Can I use this without Shopify Plus?", "Yes. SheetStack is for normal Shopify stores. You do not need Shopify Plus."],
-  ["Do I need spreadsheet skills?", "No advanced spreadsheet skills are required. You enter store inputs and daily numbers into clearly marked areas."],
+  ["Do I need spreadsheet skills?", "No advanced spreadsheet skills are required. SheetStack gives you a structured profit clarity toolkit with clearly marked input areas."],
   ["Can I use this for multiple stores?", "Yes, you can duplicate the template for another store. Use one commercial license per brand."],
   ["How long does setup take?", "Most stores can complete the first setup in under 30 minutes if their basic costs and product data are ready."],
   ["Is this a subscription?", "No. SheetStack is a one-time purchase, not a monthly SaaS subscription."],
@@ -419,14 +419,14 @@ function TrustSection() {
 
 function ProfitLeakSection() {
   const rows = [
-    ["Store revenue", "€86,420", "100%", "text-cyan-200"],
-    ["Ad spend", "-€21,880", "25.3%", "text-amber-200"],
-    ["COGS", "-€29,740", "34.4%", "text-zinc-300"],
-    ["Refunds", "-€3,240", "3.7%", "text-rose-200"],
-    ["Shipping gap", "-€1,870", "2.2%", "text-rose-200"],
-    ["Payment fees", "-€1,126", "1.3%", "text-zinc-300"],
-    ["Dead stock", "-€4,980", "5.8%", "text-amber-200"],
-    ["True contribution profit", "€20,564", "23.8%", "text-emerald-200"]
+    ["Store revenue", "$86,420", "100%", "text-cyan-200"],
+    ["Ad spend", "-$21,880", "25.3%", "text-amber-200"],
+    ["COGS", "-$29,740", "34.4%", "text-zinc-300"],
+    ["Refunds", "-$3,240", "3.7%", "text-rose-200"],
+    ["Shipping gap", "-$1,870", "2.2%", "text-rose-200"],
+    ["Payment fees", "-$1,126", "1.3%", "text-zinc-300"],
+    ["Dead stock", "-$4,980", "5.8%", "text-amber-200"],
+    ["True contribution profit", "$20,564", "23.8%", "text-emerald-200"]
   ];
 
   return (
@@ -523,15 +523,15 @@ function PricingSection() {
                 Founding operator price
               </Badge>
               <div className="mt-6 flex flex-wrap items-end gap-3">
-                <div className="text-6xl font-semibold tracking-tight text-white">197€</div>
+                <div className="text-6xl font-semibold tracking-tight text-white">$29</div>
                 <div className="pb-2 text-sm text-zinc-500">
-                  <div className="line-through">425€ individually</div>
-                  <div className="font-medium text-emerald-200">Save 228€ with the bundle</div>
+                  <div className="line-through">$59 regular price</div>
+                  <div className="font-medium text-emerald-200">Launch price · Save $30</div>
                 </div>
               </div>
               <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-400">
-                A premium Google Sheets toolkit for Shopify stores that need clearer profit, margin, ads, products,
-                inventory and weekly review numbers.
+                SheetStack is not just a spreadsheet. It is a profit clarity toolkit for Shopify operators who need to
+                track real net profit, ad spend, COGS, refunds, fees and product margins.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -552,7 +552,7 @@ function PricingSection() {
                 className="rounded-2xl p-1"
               />
               <Button href="#pricing" className="mt-5 w-full">
-                Get SheetStack Bundle
+                Get SheetStack
               </Button>
               <div className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-xs text-zinc-500">
                 <LockKeyhole className="h-3.5 w-3.5" />
@@ -635,7 +635,7 @@ export default function App() {
             href="#pricing"
             className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-emerald-300 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-[0_0_32px_rgba(110,231,183,0.20)] transition duration-300 hover:bg-emerald-200 hover:shadow-[0_0_48px_rgba(110,231,183,0.32)] focus:outline-none focus:ring-2 focus:ring-emerald-300/60 focus:ring-offset-2 focus:ring-offset-zinc-950"
           >
-            Get SheetStack Bundle
+            Get SheetStack
           </a>
         </nav>
       </header>
@@ -662,12 +662,12 @@ export default function App() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="mx-auto mt-4 max-w-3xl text-pretty text-base leading-8 text-zinc-300 sm:text-xl">
-              Use a premium Google Sheets bundle to track real profit, margins, ad spend, refunds, shipping, product
-              costs, inventory and weekly store performance.
+              SheetStack is not just a spreadsheet. It is a profit clarity toolkit for Shopify operators who need to
+              track real net profit, ad spend, COGS, refunds, fees and weekly store performance.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button href="#pricing">Get SheetStack Bundle</Button>
+              <Button href="#pricing">Get SheetStack</Button>
               <Button href="#screenshots" variant="secondary">See Real Screenshots</Button>
             </motion.div>
 
@@ -732,11 +732,11 @@ export default function App() {
             Start with your real numbers.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
-            Get the full SheetStack bundle and turn Shopify sales, ads, products, refunds and inventory into a clearer
-            weekly profit review.
+            Get SheetStack and turn Shopify sales, ads, products, refunds and inventory into a clearer weekly profit
+            review.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <Button href="#pricing">Get SheetStack Bundle</Button>
+            <Button href="#pricing">Get SheetStack</Button>
             <Button href="#screenshots" variant="secondary">See Real Screenshots</Button>
           </div>
         </motion.div>
