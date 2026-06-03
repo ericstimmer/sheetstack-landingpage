@@ -485,7 +485,7 @@ function ProfitLeakSection() {
 }
 
 function PricingSection() {
-  const trust = ["One-time payment", "Instant download", "Google Sheets template", "No monthly subscription", "14-day refund policy"];
+  const trust = ["One-time payment", "Instant download", "Profit Operations Toolkit", "No monthly subscription", "14-day refund policy"];
 
   return (
     <section id="pricing" className="relative px-4 py-16 sm:px-6 sm:py-24">
@@ -523,15 +523,15 @@ function PricingSection() {
                 Founding operator price
               </Badge>
               <div className="mt-6 flex flex-wrap items-end gap-3">
-                <div className="text-6xl font-semibold tracking-tight text-white">$29</div>
+                <div className="text-6xl font-semibold tracking-tight text-white">$49</div>
                 <div className="pb-2 text-sm text-zinc-500">
-                  <div className="line-through">$59 regular price</div>
-                  <div className="font-medium text-emerald-200">Launch price · Save $30</div>
+                  <div className="line-through">$99 regular price</div>
+                  <div className="font-medium text-emerald-200">Launch price — save $50</div>
                 </div>
               </div>
               <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-400">
-                SheetStack is not just a spreadsheet. It is a profit clarity toolkit for Shopify operators who need to
-                track real net profit, ad spend, COGS, refunds, fees and product margins.
+                Built for Shopify operators who need clarity on real net profit, ad spend, margins, refunds and
+                operational performance.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -662,8 +662,8 @@ export default function App() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="mx-auto mt-4 max-w-3xl text-pretty text-base leading-8 text-zinc-300 sm:text-xl">
-              SheetStack is not just a spreadsheet. It is a profit clarity toolkit for Shopify operators who need to
-              track real net profit, ad spend, COGS, refunds, fees and weekly store performance.
+              Built for Shopify operators who need clarity on real net profit, ad spend, margins, refunds and weekly
+              store performance.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
